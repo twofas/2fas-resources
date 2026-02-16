@@ -15,7 +15,7 @@
  ```
 
 # my-secure-vault.com.conf content:
-
+```bash
 <VirtualHost *:443>
     ServerName my-secure-vault.com
  
@@ -39,7 +39,7 @@
     ErrorLog ${APACHE_LOG_DIR}/webdav_error.log
     CustomLog ${APACHE_LOG_DIR}/webdav_access.log combined
 </VirtualHost>
-
+```
 ```bash
 - sudo a2enmod ssl
 - sudo a2ensite my-secure-vault.com.conf
